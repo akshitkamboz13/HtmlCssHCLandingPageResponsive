@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 1em sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    background-color: #bcbcbc;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%; /* Adjusted padding for responsiveness */
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 3px solid white;
+    border-radius: 2px;
+}
+
+nav ul {
+    display: none;
+}
+
+.menu {
+    height: 2rem;
+}
+
+section {
+    background-color: #bcbcbc;
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+}
+
+section div img {
+    height: 20rem;
+}
+
+section .about-post {
+    width: 90%; 
+    padding: 1rem;
+}
+
+section div .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.buyNowBtn {
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buyNowBtn:hover {
+    background-color: #0a0a0a;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0 10%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 3px;
+        border: 2px solid #333;
+        transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        color: #bcbcbc;
+        border: 2px solid #bcbcbc;
+        border-radius: 10px;
+        text-decoration: underline;
+    }
+
+    section {
+        margin-top: 10%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section .about-post {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        padding: 0 15%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 3px;
+        border: 2px solid #333;
+        transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        color: #bcbcbc;
+        border: 2px solid #bcbcbc;
+        border-radius: 10px;
+        text-decoration: underline;
+    }
+
+    section .about-post {
+        width: 50%;
+        font-size: larger;
+    }
+    section div img {
+        height: 30rem;
+    }
+}
